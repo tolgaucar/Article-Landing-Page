@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #FFFFFF;
+    --title-color: white;
+    --subtitle-color: #CFCFCF;
+    --button-text: #0500FF;
+    --button-hover: yellow;
+    --button-hover-text: black;
+    --backgroundfirst: #0500FF;
+    --boxbackground: rgba(1, 1, 17, 0.308);
+    --backgroundsecond: #040341;
+    --button-background: white;
+}
+
+*,
+*::after,
+*::before{
+    scroll-behavior: smooth;
+    transition: all .8s ease-in-out;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+* ul li{
+    list-style: none;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--backgroundfirst);
+    outline: 1px solid rgb(0, 0, 0);
+  }
+
+body{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background: linear-gradient(180deg, var(--backgroundfirst) 35.42%, var(--backgroundsecond) 100%) no-repeat fixed center top;
+}
+
+.flex{
+    display: flex;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.logo{
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 0%;
+}
+
+
+.headernav{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    padding: 15px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a{
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 14px;
+    transition: 0.8s;
+}
+
+.navbar ul li a:hover{
+    color: var(--button-hover);
+}
+
+.go{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0%;
+    color: var(--button-text) !important;
+    padding: 7px 10px !important;
+    background-color: var(--button-background);
+    border-radius: 31px;
+}
+
+.go:hover{
+    background-color: var(--button-hover);
+    color: var(--button-hover-text) !important;
+}
+
+.hero{
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.herotitle{
+    color: var(--title-color);
+    font-size: 64px;
+}
+
+.herosubtitle{
+    color: var(--subtitle-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 0%;
+    color: var(--button-text); !important;
+    padding: 1.3rem 1rem !important;
+    background-color: #FFFFFF;
+    border-radius: 31px;
+    transition: 0.5s ease-out;
+}
+
+.textbox a:hover{
+    background-color: var(--button-hover);;
+    color: var(--button-hover-text) !important;
+}
+
+.about{
+    
+    margin-top: 7rem;
+}
+
+.about h1{
+    font-size: 25px;
+}
+
+.about .subtitle{
+    color: var(--subtitle-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sss{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.box{
+    margin-top: 1rem;
+    border: 2px rgb(255, 255, 255) solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--boxbackground);
+    width: 100%;
+    
+}
+
+.question{
+    margin-top: 13px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.answer{
+    margin-bottom: 13px;
+}
+
+.none{
+    display: none;
+}
+
+@media screen and (max-width: 1064px) {
+
+    .textbox a{
+        font-size: 1.3rem;
+        padding: 1.7rem 1.5rem !important;
+    }
+    .herotitle{
+        font-size: 3rem;
+    }
+    .textbox{
+        text-align: center;
+    }
+    .img{
+        margin: 0 auto;
+        display: none;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .headernav{
+       justify-content: center;
+       align-items: center;
+    }
+
+    .hero .content{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .herotitle{
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .none{
+        display: block;
+    }
+
+    .about .content{
+        text-align: center;
+    }
+
+
+
+    .sss{
+        text-align: center;
+    }
+
+    .question{
+        padding: 5px;
+    }
+
+  }
