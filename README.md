@@ -30,5 +30,9 @@
 ## Deploy
 1. Fork and use
 
+## Contributions
+All contributors are most welcome! This is definitely open source!
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
