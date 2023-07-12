@@ -5,17 +5,18 @@
 
 [EN] This landing page was prepared with HTML5/CSS for a project, and since it could not be continued due to the cancellation of the project, it was only coded as html5/css and the front side was shared free of charge.
 
-## Özellikler
-- Responsive
-- Temiz Kod
-- Yumuşak Geçişler
-- Backend için hazır durumda.
-
-## Features
+## Properties
 - Responsive
 - Clean Code
 - Smooth Transitions
 - Ready for backend.
+
+
+[TR]
+- Responsive
+- Temiz Kod
+- Yumuşak Geçişler
+- Backend için hazır durumda.
 
 ## Screenshot
 - https://prnt.sc/1r5fgl4
